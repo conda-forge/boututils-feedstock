@@ -25,7 +25,6 @@ requirements:
     - scipy
     - h5py
     - future
-    - bunch
     - netcdf4
 
 test:
