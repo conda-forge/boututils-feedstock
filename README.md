@@ -5,9 +5,11 @@ Home: https://github.com/boutproject/boututils
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/boututils-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python utilities for BOUT++
+
+Development: https://github.com/boutproject/boututils
 
 pip-package of what was previously found in BOUT-dev/tools/pylib/boututils
 Note that BOUT-dev/tools/pylib/boututils will likely be replaced by this
