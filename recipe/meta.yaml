@@ -32,8 +32,6 @@ test:
     - boututils
   requires:
     - pytest
-  source_files:
-    - test
   commands:
     - pytest
 
