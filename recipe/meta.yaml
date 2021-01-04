@@ -33,11 +33,7 @@ test:
   requires:
     - pytest
   commands:
-    - ls
-    - ls boututils
-    - ls boututils/tests
-    - cat boututils/tests/test_import.py
-    - pytest
+    - pytest --pyargs boututils
 
 about:
   home: https://github.com/boutproject/boututils
