@@ -1,5 +1,5 @@
 {% set name = "boututils" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 730f6c8d6da74a3a5f41e5061ef4bc8eaa85f86f7e4c87bab247ec65b02c5be2
+  sha256: b30bdca18d831760dae1b8b012bf462736c58b6b39d941984a53a499f5b98cb3
 
 build:
   noarch: python
