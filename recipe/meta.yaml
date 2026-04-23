@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b8e12cace0638645de09647b60f1f1e0079ded359855a9d220aede94736d2fe5
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.0
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.0
+    - python >={{ python_min }}
     - numpy
     - matplotlib-base
     - scipy
@@ -33,6 +33,7 @@ test:
     - boututils
   requires:
     - pytest
+    - python {{ python_min }}
   commands:
     - pytest --pyargs boututils
 
